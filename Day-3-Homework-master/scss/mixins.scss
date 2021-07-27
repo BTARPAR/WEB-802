@@ -1,0 +1,18 @@
+// Mixin or Extend for button
+@mixin default-button($text-color, $bgColor) {
+  padding: 0.5rem;
+  color: $text-color;
+  background: $bgColor;
+  border: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+@mixin for-phone-only {
+  @media (max-width: 850px) {
+    @content;
+  }
+}

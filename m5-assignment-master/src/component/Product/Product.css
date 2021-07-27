@@ -1,0 +1,66 @@
+.product-container {
+    border: 1px solid #D3D3D3FF;
+    padding: 1rem 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.product-description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-description img {
+    cursor: pointer;
+}
+
+.product-description p span {
+    margin: 0 0 1rem 0;
+}
+
+.product-description p span:last-child {
+    margin: 0 0 1rem 1rem;
+}
+
+.product-quantity {
+    margin-left: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product-quantity input {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    border: 2px solid lightgray;
+}
+
+.product-quantity .quantity-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 6rem;
+}
+
+.product-quantity .quantity-handlers {
+    display: flex;
+    align-items: center;
+
+}
+
+.product-quantity .quantity-handlers button {
+    margin-right: 1rem;
+    padding: 0.5rem 1rem;
+    background-color: #727272;
+    border-radius: 5px;
+    cursor: pointer;
+    border-right: none;
+}
+
+.product-quantity .quantity-handlers button svg {
+    color: #FFFFFFFF;
+    font-size: 1.3rem;
+}

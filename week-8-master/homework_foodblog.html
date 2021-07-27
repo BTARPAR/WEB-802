@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Food Blog</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap" rel="stylesheet">
+    <!--External Style Method-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <link href="styles/foodblog.css" rel="stylesheet">
+
+
+</head>
+<body class="container-fluid">
+<div class="row background-theme">
+    <aside id="leftside" class="col-4"></aside>
+    <aside id="rightside" class="col-8"></aside>
+</div>
+<div id="container">
+    <headercomponent></headercomponent>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse bg-light" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="#">Home</a>
+                <a class="nav-item nav-link" href="#">Recipes</a>
+                <a class="nav-item nav-link" href="#">Lifestyle</a>
+                <a class="nav-item nav-link" href="#">Videos</a>
+                <a class="nav-item nav-link" href="#">About</a>
+            </div>
+        </div>
+    </nav>
+    <main class="row">
+        <aside id="photos">
+            <img :src="blogphoto" alt="White Chicken Chili" width="180">
+        </aside>
+        <div id="comments">
+            <comments></comments>
+            <section id="blogposts" class="col">
+                <div class="post" v-for="data in comments" :key="data.date">
+                    <div class="user-info">
+                        <img v-bind:src="filelocation" height="40" width="45"
+                             v-on:click="openmodal(data.author.toLowerCase())"/>
+                        <span class="author">{{data.author}}</span> —
+                        <span class="date">{{data.date}}</span>
+                        <span class="reply">{{data.reply}}</span>
+                    </div>
+                    <p>
+                        {{data.comment}}
+                    </p>
+                </div>
+            </section>
+        </div>
+    </main>
+    <div v-if="showmodal" id="myModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <span class="close" v-on:click="togglemodal">&times;</span>
+            <div v-html="htmlcontent"></div>
+            <button v-on:click="togglemodal" style="margin-top: 6rem">Close</button>
+        </div>
+
+    </div>
+
+    <footer>
+        &copy; Copyright FOOD BLOG
+    </footer>
+
+</div>
+<script src="js/comments.js" type="text/javascript"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<!-- Bootstrap Popper -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

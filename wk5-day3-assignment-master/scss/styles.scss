@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Bitter:400,400italic,700);
+
+//Colors:
+
+$white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
+$gray: rgba(0, 0, 0, 0.5);
+$light-gray: rgba(0, 0, 0, 0.24);
+$tangaroa: rgb(22, 34, 42);
+$matisse: rgb(58, 96, 115);
+/*---------
+
+//Fonts:
+Bitter
+FontAwesome
+
+----------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Bitter";
+}
+
+$max-width: 80em;
+
+
+.main-wrapper {
+  width: 100%;
+
+  .header {
+    background: linear-gradient(to right, $matisse, $tangaroa);
+    display: flex;
+    justify-content: center;
+    height: 8rem;
+    align-items: center;
+    color: $white;
+  }
+
+  div[id="vue"] {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+
+    .grid-container {
+      display: grid;
+      width: 80%;
+    }
+
+
+    .grid-container--fit {
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+      row-gap: 1.5rem;
+    }
+
+
+    .grid-element {
+      display: flex;
+      flex-direction: column;
+
+      width: 12rem;
+      border: 1px solid $white;
+
+      img {
+        height: 70%;
+        background-size: cover;
+      }
+
+      .description {
+        display: grid;
+        grid-auto-rows: 1fr;
+        text-align: center;
+
+        span {
+          padding: 0.2rem;
+          font-size: 12px;
+        }
+
+        button {
+          line-height: 1.5rem;
+          width: 5.5rem;
+          background: $white;
+        }
+
+        span, button {
+          justify-self: center;
+          align-self: center;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "wk3-day3-homework",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "prestart": "npm i",
+    "lite": "lite-server",
+    "scss": "node-sass scss -o  css",
+    "start": "npm run watch:all",
+    "watch:scss": "onchange 'scss/*.scss' -- npm run scss",
+    "watch:all": "parallelshell 'npm run watch:scss' 'npm run lite' "
+  },
+  "author": "Bhargav",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.3.0",
+    "node-sass": "^5.0.0",
+    "onchange": "^3.3.0",
+    "parallelshell": "3.0.1"
+  }
+}

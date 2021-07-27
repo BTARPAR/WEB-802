@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pet Adoption</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--Container wrap to everything start-->
+<div id="container">
+    <!--Website Title Start-->
+    <header>
+        <div>
+            <div class="website-logo">
+                <img src="images/adopt-pet.png" alt="Pet Logo" width="300">
+            </div>
+            <!--Main Navigation-->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="adoption.html">Apply for adoption</a></li>
+                    <li><a href="service.html">Request a services</a></li>
+                </ul>
+            </nav>
+            <!--End Of Navigation-->
+        </div>
+    </header>
+    <!--Website Title End-->
+    <!--Main Content-->
+    <main>
+        <h1>Request for adoption</h1>
+        <p>
+            Pet adoption is the process of taking responsibility for a pet that a previous owner has abandoned or
+            released to a shelter or rescue organization. Common sources for adoptable pets are animal shelters and
+            rescue groups. Some organizations give adopters ownership of the pet, while others use a guardianship model
+            wherein the organization retains some control over the animal's future use or care.
+        </p>
+        <p>
+            Online pet adoption sites have databases of pets being housed by thousands of animal shelters and rescue
+            groups, and are searchable by the public.
+        </p>
+
+        <h2>Adoption Process and Requirements</h2>
+        <p>
+            You're ready to adopt your new best friend. Great! Here are a few important things to know about our
+            adoption process:
+        </p>
+        <ul class="requirement">
+            <li>
+                All adopters must be 18 years of age or older and must present valid/current government-issued
+                identification at the time of adoption.
+            </li>
+            <li>
+                Prior to adopting a dog or cat from Best Friends, adopters will need the knowledge and consent of their
+                landlord.
+            </li>
+            <li>
+                Before visiting either the Best Friends Lifesaving Center or NKLA Pet Adoption Center, save time and
+                complete our adoption survey so when you visit our center the adoption process is already underway!
+            </li>
+            <li>
+                Before going to a new home, each pet is vaccinated, spayed or neutered, and microchipped.
+            </li>
+        </ul>
+
+        <!--Adoption Form Start-->
+        <form action="/apply" method="post">
+            <fieldset>
+                <legend>Adoption Form</legend>
+                <!--User's Name Information Start-->
+                <label>Enter your full name</label>
+                <input type="text" name="name"/>
+                <!--User's Name Information End-->
+
+                <!--User's Email Information Start-->
+                <label>Enter your email</label>
+                <input type="email" name="email"/>
+                <!--User's Email Information End-->
+
+                <!--User's Phone Information Start-->
+                <label>Enter your phone</label>
+                <input type="text" name="phone"/>
+                <!--User's Email Information End-->
+
+                <!--User's Address Start-->
+                <label>Address</label>
+                <textarea rows="3" cols="30"></textarea>
+                <!--User's Address End-->
+
+                <!--User's Contact Preference Start-->
+                <label>How should we contact you?</label>
+                <select id="contact-select" onchange="optionSelected()">
+                    <option id="select">Select One</option>
+                    <option id="email">Email</option>
+                    <option id="phone">Phone</option>
+                </select>
+                <div class="textbox" id="option-selected"></div>
+                <!--User's Contact Preference End-->
+                <!--Selection lis of pets Start-->
+                <label>Type of pet you want to adopt</label>
+                <select>
+                    <option value="Cat">Cat</option>
+                    <option value="Dog">Dog</option>
+                    <option value="Goldfish">Goldfish</option>
+                    <option value="Hamster">Hamster</option>
+                    <option value="Kitten">Kitten</option>
+                    <option value="Mouse">Mouse</option>
+                    <option value="Parrot">Parrot</option>
+                    <option value="Puppy">Puppy</option>
+                    <option value="Rabbit">Rabbit</option>
+                    <option value="Tropical fish">Tropical fish</option>
+                    <option value="Turtle">Turtle</option>
+                </select>
+                <!--Selection lis of pets End-->
+
+                <label>If you have any special request:</label>
+                <!--User's Contact Information Response Start-->
+                <textarea rows="5" cols="30"></textarea>
+                <!--User's Contact Information Response End-->
+
+                <!--User Ready To Take Submit Action Start-->
+                <div>
+                    <input type="submit" value="Apply">
+                </div>
+                <!--User Ready To Take Submit Action End-->
+            </fieldset>
+        </form>
+        <!--Adoption Form End-->
+        <div>
+            <h2>Here are some tips for making sure you hear back quickly:</h2>
+            <ol class="requirement">
+                <li>
+                    Be sure to check the organization’s Petfinder home page to see if they
+                    mention a delay due to the volume of inquiries they receive, family and
+                    jobs, etc.
+                </li>
+                <li>
+                    Read the pet’s profile carefully to be sure that she or he appears to be a match for your
+                    lifestyle.
+                </li>
+                <li>
+                    Keep follow-up inquiries short, friendly, and to the point. A short
+                    message will be read more quickly than a longer voice or email,
+                    especially if the foster parent has only a short time in the evening to
+                    check messages. Let the foster parent see you are the type of person
+                    she really wants to adopt to.
+                </li>
+                <li>
+                    If you have reached someone with the group — even if it’s not your
+                    pet’s foster home — ask him when you should expect a call back. In your
+                    correspondence, let the group know you will be checking back again on a
+                    particular date and time.
+                </li>
+                <li>
+                    Ask for the foster parent’s name, even if it’s only a first name.
+                    This will make future communication easier when you call back about
+                    “Betsy, who is caring for Ruffian.”
+                </li>
+                <li>
+                    Ask if the group is holding any upcoming special events like a
+                    meet-and-greet at your local Petco. Consider stopping by to meet someone
+                    from the organization in person, even if your own special pet isn’t
+                    scheduled to be there.
+                </li>
+                <li>
+                    Inquire about more than one pet and to more than one group. Even if
+                    your heart is set on that “one special pet” you saw with a specific
+                    group on Petfinder, check the pet lists of other groups, stop in at your
+                    local shelter, and check out our Event Calendar to meet with other
+                    rescue organizations. Bring a friend who might also be interested in
+                    adopting. You’ll become a more informed adopter and your adoption
+                    experience will be richer. Should you miss out on your “chosen one”
+                    because he was adopted to another wonderful home, you are still moving
+                    forward toward finding that special canine friend.
+                </li>
+            </ol>
+        </div>
+        <!--Footer Information Start-->
+        <footer>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="adoption.html">Apply for adoption</a></li>
+                    <li><a href="service.html">Request a services</a></li>
+                </ul>
+            </div>
+            <p>&copy; Copyright 2020</p>
+        </footer>
+        <!--Footer Information End-->
+    </main>
+    <!--End Of Main Content-->
+</div>
+<!--Container wrap to everything start-->
+<!--External Javascript Code START-->
+<script type="text/javascript" src="js/selectHandler.js"></script>
+<!--External Javascript Code END-->
+</body>
+</html>

@@ -1,0 +1,3 @@
+# Project exclude paths
+/node-mongo/node_modules/
+package-lock.json

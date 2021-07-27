@@ -1,0 +1,70 @@
+.App {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.App-header {
+    background-color: #3feafc;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(10px + 2vmin);
+    height: 10vmin;
+    color: #FFFFFFFF;
+}
+
+.App-header > * {
+    margin: 0 20px;
+}
+
+.App-header .home-header {
+background-color: #FFFFFF;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    font-weight: bold;
+    color: #3feafc;
+}
+
+.App-header a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.App-header a div {
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.App-header div p {
+    margin: 0 0 0 1rem;
+    font-size: 14px;
+    font-weight: unset;
+}
+
+.App-link {
+    color: #61dafb;
+}
+
+.modal-body-class {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-body-class img {
+    margin: 0 auto;
+}
+
+.reduce-size {
+    font-size: 12px;
+}
+
+@keyframes App-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}

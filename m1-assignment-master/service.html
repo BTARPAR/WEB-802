@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Request A Special Service</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<!--Container wrap to everything start-->
+<div id="container">
+    <!--Website Title Start-->
+    <header>
+        <div>
+            <div class="website-logo">
+                <img src="images/adopt-pet.png" alt="Pet Logo" width="300">
+            </div>
+            <!--Main Navigation-->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="adoption.html">Apply for adoption</a></li>
+                    <li class="active"><a href="service.html">Request a services</a></li>
+                </ul>
+            </nav>
+            <!--End Of Navigation-->
+        </div>
+    </header>
+    <!--Website Title End-->
+    <!--Main Content-->
+    <main>
+        <h1>Request for special services</h1>
+        <p>
+            Pet adoption is the process of taking responsibility for a pet that a previous owner has abandoned or
+            released to a shelter or rescue organization. Common sources for adoptable pets are animal shelters and
+            rescue groups. Some organizations give adopters ownership of the pet, while others use a guardianship model
+            wherein the organization retains some control over the animal's future use or care.
+        </p>
+        <p>
+            Online pet adoption sites have databases of pets being housed by thousands of animal shelters and rescue
+            groups, and are searchable by the public.
+        </p>
+        <!--Adoption Form Start-->
+        <form action="/request" method="post">
+            <fieldset>
+                <legend>Service Request Form</legend>
+                <!--User's Name Information Start-->
+                <label>Enter your full name</label>
+                <input type="text" name="name"/>
+                <!--User's Name Information End-->
+
+                <!--User's Email Information Start-->
+                <label>Enter your email</label>
+                <input type="email" name="email"/>
+                <!--User's Email Information End-->
+
+                <!--User's Phone Information Start-->
+                <label>Enter your phone</label>
+                <input type="text" name="phone"/>
+                <!--User's Email Information End-->
+
+                <!--User's Address Start-->
+                <label>Address</label>
+                <textarea rows="3" cols="48"></textarea>
+                <!--User's Email Information End-->
+
+                <!--Type of request user is requesting Start-->
+                <label>Type of request</label>
+                <select>
+                    <option value="Stray Dog - Loose">Stray Dog - Loose</option>
+                    <option value="Stray Dog - Confined">Stray Dog - Confined</option>
+                    <option value="Stray Cat - Loose">Stray Cat - Loose</option>
+                    <option value="Stray Cat - Confined/Trapped">Stray Cat - Confined/Trapped</option>
+                    <option value="Stray Animal - Other - Loose">Stray Animal - Other - Loose</option>
+                    <option value="Stray Animal - Other - Confined">Stray Animal - Other - Confined</option>
+                    <option value="Dog Bite (Non-emergency)">Dog Bite (Non-emergency)</option>
+                </select>
+                <!--Type of request user is requesting End-->
+
+                <label>Detailed description of situation and animal(s) involved </label>
+                <!--User's Contact Information Response Start-->
+                <textarea rows="5" cols="48"></textarea>
+                <!--User's Contact Information Response End-->
+
+                <!--User Ready To Take Submit Action Start-->
+                <div class="service-submit">
+                    <input type="submit" value="Submit Request">
+                </div>
+                <!--User Ready To Take Submit Action End-->
+            </fieldset>
+        </form>
+        <!--Adoption Form End-->
+        <!--Footer Information Start-->
+        <footer>
+            <div class="nav">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="adoption.html">Apply for adoption</a></li>
+                    <li><a href="service.html">Request a services</a></li>
+                </ul>
+            </div>
+            <p>&copy; Copyright 2020</p>
+        </footer>
+        <!--Footer Information End-->
+    </main>
+    <!--End Of Main Content-->
+</div>
+<!--Container wrap to everything start-->
+</body>
+</html>

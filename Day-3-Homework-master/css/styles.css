@@ -1,0 +1,59 @@
+/* Variables */
+/* Nest Nav */
+header nav ul {
+  display: flex; }
+  header nav ul li {
+    padding: 0.5rem;
+    list-style: none;
+    color: white; }
+  header nav ul a {
+    color: white; }
+
+/* Nest Main */
+html {
+  font-size: 80%; }
+  html body {
+    background: #daaa0e; }
+    html body * {
+      font-family: Arial, Helvetica, Sans-Serif; }
+    html body main {
+      width: 98%;
+      min-height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: #d4d5d8;
+      border: 1rem solid white; }
+      @media (max-width: 850px) {
+        html body main {
+          flex-direction: column-reverse; } }
+      html body main section {
+        flex: 1;
+        text-align: center;
+        display: flex; }
+        html body main section[id='intro-text'] {
+          align-items: center;
+          flex-direction: column; }
+          @media (max-width: 850px) {
+            html body main section[id='intro-text'] {
+              margin: 2rem; } }
+          html body main section[id='intro-text'] span {
+            font-family: 'Sacramento', cursive;
+            font-size: 2.5rem; }
+          html body main section[id='intro-text'] h3 {
+            font-size: 2rem; }
+          html body main section[id='intro-text'] .submit-button {
+            padding: 0.5rem;
+            color: white;
+            background: #daaa0e;
+            border: none;
+            cursor: pointer;
+            margin: 2rem; }
+            html body main section[id='intro-text'] .submit-button:focus {
+              outline: none; }
+        html body main section[id='intro-image'] img {
+          width: 100%;
+          height: auto; }
+    html body footer {
+      display: flex;
+      padding: 2rem 2rem 2rem 3rem; }

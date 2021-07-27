@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Local Pet Adoption Service</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- jQuery Library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+<!--Container wrap to everything-->
+<div id="container">
+    <!--Website Title Start-->
+    <header>
+        <div>
+            <div class="website-logo">
+                <img src="images/adopt-pet.png" alt="Pet Logo" width="300">
+            </div>
+            <!--Main Navigation-->
+            <nav>
+                <ul>
+                    <li class="active"><a href="index.html">Home</a></li>
+                    <li><a href="adoption.html">Apply for adoption</a></li>
+                    <li><a href="service.html">Request a services</a></li>
+                </ul>
+            </nav>
+            <!--End Of Navigation-->
+        </div>
+    </header>
+    <!--Website Title End-->
+
+    <!--Main Content-->
+    <main>
+        <h1>About us</h1>
+        <p>
+            The County of Los Angeles Department of Animal Care and Control is one of the largest and most progressive
+            animal control agencies in the United States. DACC has adopted the philosophy of Socially Conscious Animal
+            Sheltering at our seven animal care centers. We serve unincorporated Los Angeles County and 44 contract
+            cities
+            with a combined total population of over 3 million residents. We cover more than 3,400 square miles of
+            cities,
+            deserts, beaches, and mountains; from the Antelope Valley in the north to the Palos Verdes Peninsula in the
+            south, as far east as the border of San Bernardino County, and west to Thousand Oaks. We provide animal
+            control
+            and rescue services in our service areas 24 hours a day, seven days a week.
+        </p>
+        <p>
+            Our animal care centers offer a wide variety of potential pets for you to choose. Most of our animals are
+            either strays or pets turned in by owners who are no longer able to keep them. The many benefits of adopting
+            from a County Animal Care Center include low‑cost spaying/neutering, a free veterinary checkup, the peace of
+            mind knowing that your new pet has received its initial vaccinations against contagious diseases, and the
+            satisfaction of having saved the life of a shelter animal. Besides patrolling busy streets, back roads,
+            beaches, and canyons for lost, injured, and abandoned animals, our animal control officers also conduct
+            humane investigations when animal cruelty is suspected, provide emergency rescues during natural disasters,
+            enforce all State and local animal control laws, conduct animal licensing (canvassing) inspections; and
+            inspect and license commercial animal facilities.
+        </p>
+        <h2>Gallery</h2>
+        <section>
+            <ul class="gallery" id="gallery-view">
+                <!--<li class="photo1">
+                    <div class="hover-effect">
+                        <img src="images/pets/pet-1.jpg" alt="Family of Cats" width="400" height="300">
+                        <span class="description">Daffy</span>
+                    </div>
+                    <span></span>
+                </li>
+                <li class="photo2">
+                    <div class="hover-effect">
+                        <img src="images/pets/pet-2.jpg" alt="Poodle" width="400" height="300">
+                        <span class="description">Cuddles</span>
+                    </div>
+                    <span></span>
+                </li>
+                <li class="photo3">
+                    <div class="hover-effect">
+                        <img src="images/pets/pet-3.jpg" alt="Chihuahua" width="400" height="300">
+                        <span class="description">Brat</span>
+                    </div>
+                    <span></span>
+                </li>
+                <li class="photo4">
+                    <div class="hover-effect">
+                        <img src="images/pets/pet-4.jpg" alt="Baby German Shepherd" width="400" height="300">
+                        <span class="description">Junior</span>
+                    </div>
+                    <span></span>
+                </li>
+                <li class="photo5">
+                    <div class="hover-effect">
+                        <img src="images/pets/pet-5.jpg" alt="Munchkin Cat" width="400" height="300">
+                        <span class="description">Malibu</span>
+                    </div>
+                    <span></span>
+                </li>
+                <li class="photo6">
+                    <div class="hover-effect">
+                        <img src="images/pets/pet-6.jpg" alt="A family of Dog & Cat" width="400" height="300">
+                        <span class="description">Dori Omelette Rose Alvin</span>
+                    </div>
+                    <span></span>
+                </li>
+                <li class="photo7">
+                    <div class="hover-effect">
+                        <img src="images/pets/pet-7.jpg" alt="Family of baby dog and cat" width="400" height="300">
+                        <span class="description">Tamera Glitter Claudia Porker</span>
+                    </div>
+                    <span></span>
+                </li>
+                <li class="photo8">
+                    <div class="hover-effect">
+                        <img src="images/pets/pet-8.jpg" alt="Labrador Family" width="400" height="300">
+                        <span class="description">Tonic Critter Spur Isabelle Fester</span>
+                    </div>
+                    <span></span>
+                </li>
+                <li class="photo9">
+                    <div class="hover-effect">
+                        <img src="images/pets/pet-9.jpg" alt="Almost entire pet family" width="400" height="300">
+                        <span class="description">Harry Nelly Shelby Pulsar</span>
+                    </div>
+                    <span></span>
+                </li>
+                <li class="photo10">
+                    <div class="hover-effect">
+                        <img src="images/pets/pet-10.jpg" alt="Family of adopted pet" width="400" height="300">
+                        <span class="description">Jena Wobble Rasta Kabuki Shakira Kramer</span>
+                    </div>
+                    <span></span>
+                </li>-->
+            </ul>
+            <div class="modal hide" id="modal-popup">
+                <div class="header">
+                    <h2 id="modal-header"></h2>
+                </div>
+                <div class="content" id="modal-content">
+                    <!--CONTENT-->
+                </div>
+                <div class="close" onclick="closeModal()">
+                    Click This To Close
+                </div>
+            </div>
+            <div class="backdrop"></div>
+            <div class="box">
+                <div class="close">x</div>
+            </div>
+        </section>
+        <h2>Facts about Pet Ownership in the U.S.:</h2>
+        <!--Table start-->
+        <table>
+            <caption>Primary methods of adoption</caption>
+            <!--Header Creation Start-->
+            <thead>
+            <tr>
+                <th>Methods</th>
+                <th>Dogs</th>
+                <th>Cats</th>
+            </tr>
+            </thead>
+            <!--Header Creation End-->
+            <!--Table Body Start-->
+            <tbody>
+            <tr>
+                <td>Animal Shelter/Humane Society</td>
+                <td>23%</td>
+                <td>31%</td>
+            </tr>
+            <tr>
+                <td>Friends/Relatives</td>
+                <td>20%</td>
+                <td>28%</td>
+            </tr>
+            <tr>
+                <td>Breeder</td>
+                <td>34%</td>
+                <td>3%</td>
+            </tr>
+            <tr>
+                <td>Stray</td>
+                <td>6%</td>
+                <td>27%</td>
+            </tr>
+            <tr>
+                <td>Private Party</td>
+                <td>12%</td>
+                <td>6%</td>
+            </tr>
+            </tbody>
+            <!--Table Body End-->
+            <!--Table Footer Start-->
+            <tfoot>
+            <tr>
+                <td>Other</td>
+                <td>32%</td>
+                <td>39%</td>
+            </tr>
+            </tfoot>
+            <!--Table Footer End-->
+        </table>
+        <!--Table start-->
+
+        <!--Stories about recent adoption Start-->
+        <h2>Happy Tails</h2>
+        <p>
+            Tell us the story of how you met your furry best friend and help other pet lovers discover the joys of pet
+            adoption!
+        </p>
+        <div>
+            <div class="pet-story">
+                <h3>William & Sylvester</h3>
+                <p class="pet-detail">Adopted November 2020 || Maine Coon</p>
+                <div>
+                    <img src="images/sylvester.png" alt="William & Sylvester" width="450">
+                    <p class="pet-detail">
+                        Sylvester is a senior citizen - at 12 years old, it could have been difficult to find an
+                        adoptive family. But he is perfect for our family - kind, gentle, loving and sweet. He's been
+                        with us for less than a month, but he is already at home with all 6 of us, even approaching the
+                        younger children without hesitation. He is such a sweetheart and we are thrilled to have him in
+                        our home!
+                    </p>
+                </div>
+            </div>
+            <div class="pet-story">
+                <h3>Debra & Kaya, Holly & Mickey</h3>
+                <p class="pet-detail">Adopted December 2020 || Yorkshire Terrier / Chihuahua</p>
+                <div>
+                    <img src="images/three-pets.png" alt="Holly, Mickey & Kaya" width="450">
+                    <p class="pet-detail">
+                        As soon as I saw those three sweet faces, I was in love! I knew these senior dogs were meant to
+                        be with me. I received them on 12/19/20 and the adoption was finalized on 1/6/21. Three
+                        wonderful personalities that mesh well with mine. Our walks together, give me incentive, to get
+                        outside in the fresh air. As a senior myself, dealing with daily pain, these three kids, are all
+                        I need to push past the pain and live again!
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--Stories about recent adoption End-->
+    </main>
+    <!--End Of Main Content-->
+    <!--Footer Information-->
+    <footer>
+        <div class="nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="adoption.html">Apply for adoption</a></li>
+                <li><a href="service.html">Request a services</a></li>
+            </ul>
+        </div>
+        <p>&copy; Copyright 2020</p>
+    </footer>
+</div>
+<!--End Container-->
+<!--External Javascript Code START-->
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
+<!--External Javascript Code END-->
+</body>
+</html>
